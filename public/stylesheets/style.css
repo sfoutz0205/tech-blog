@@ -10,9 +10,13 @@ body, html {
   color: #333;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: salmon;
   font-weight: bold;
   transition: color .1s;
 }
@@ -39,6 +43,16 @@ button:hover {
 .post-list {
   margin: 0;
   padding: 0;
+}
+
+.post {
+  border: solid 2px salmon;
+  padding: 8px;
+  width: 50%;
+}
+
+.post-title {
+  font-size: 24px;
 }
 
 .post-body {
@@ -87,7 +101,12 @@ header {
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 50px;
+  color: black;
+}
+
+header nav {
+  font-size: 20px;
 }
 
 main {
