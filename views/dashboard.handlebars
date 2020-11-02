@@ -1,4 +1,4 @@
-<a href="/add" class="add-link">Add post</a>
+<a href="/add" class="link-btn">Add post</a>
 
 {{#if posts.length}}
 <section>
@@ -7,7 +7,7 @@
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="link-btn">Edit post</a>
     </li>
     {{/each}}
   </ul>

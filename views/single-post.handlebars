@@ -11,7 +11,7 @@
     posted by {{post.user.username}} on
     {{format_date post.created_at}}
     |
-    <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment"}}</a>
+    <a href="#comments">{{post.comments.length}} {{format_plural "comment"}}</a>
   </div>
 </article>
 
@@ -27,7 +27,9 @@
 </form>
 {{/if}}
 
-{{> comments post.comments }}
+<div id="comments">
+  {{> comments post.comments }}
+</div>
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

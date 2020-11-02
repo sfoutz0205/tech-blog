@@ -2,7 +2,10 @@
   <div class="title">
     <a href="/post/{{id}}" class="post-title">{{title}}</a>
   </div>
-  <div class="meta">
+  <div class="post-body">
+    {{post_text}}
+  </div>
+  <div class="post-info">
     posted by {{user.username}} on
     {{format_date created_at}}
     |

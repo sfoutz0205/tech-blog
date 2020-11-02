@@ -13,6 +13,12 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  color: salmon;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
 a {
   text-decoration: none;
   color: salmon;
@@ -51,11 +57,14 @@ button:hover {
 
 .post-title {
   font-size: 24px;
-  text-decoration: underline;
 }
 
 .post-body {
-  width: 8vw;
+  padding: 20px;
+}
+
+.post-info {
+  text-decoration: underline;
 }
 
 textarea, input {
@@ -100,7 +109,7 @@ header {
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 60px;
   color: black;
 }
 
@@ -153,7 +162,7 @@ main {
   color: #7d7d7d;
 }
 
-.edit-link {
+.link-btn {
   display: block;
   margin: -1.5% 0 2% 0;
   background-color: salmon;
@@ -200,8 +209,5 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
-}
-
-#edit-post-text {
-  
+  color: salmon;
 }
