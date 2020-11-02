@@ -191,6 +191,10 @@ main {
   opacity: .6;
 }
 
+.comment-info {
+  padding: 10px 0;
+}
+
 .new-post-form {
   justify-content: center;
 }
