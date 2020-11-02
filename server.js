@@ -26,3 +26,5 @@ sequelize.sync({ force: false }).then(() => {
 });
 
 
+module.exports = routes;
+
