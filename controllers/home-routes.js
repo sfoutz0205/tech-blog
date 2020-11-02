@@ -45,6 +45,26 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+// SIGNUP PAGE
+router.get('/signup', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('signup');
+});
+
+// ADD POST PAGE
+router.get('/add', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('add-post', {
+    loggedIn: req.session.loggedIn
+});
+});
+
 // SINGLE POST PAGE
 router.get('/post/:id', (req, res) => {
   Post.findOne({

@@ -11,16 +11,16 @@
     posted by {{post.user.username}} on
     {{format_date post.created_at}}
     |
-    <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" comments.length}}</a>
+    <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment"}}</a>
   </div>
 </article>
 
 {{#if loggedIn}}
 <form class="comment-form">
   <div>
+    <label for="password-login">Add a comment:</label>
     <textarea name="comment-body"></textarea>
   </div>
-
   <div>
     <button type="submit">add comment</button>
   </div>
